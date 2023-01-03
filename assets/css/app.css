@@ -421,3 +421,7 @@ header#mobile a.sidenav-trigger:hover {
 #home .container ul li a:hover i {
   color: #f9f9f9;
 }
+
+#sobre p {
+  margin-top: 16px;
+}
