@@ -26,6 +26,7 @@ header#desktop {
 
     a.navbar-brand {
       color: #f0f0f0;
+      text-decoration: none;
     }
 
     .navbar-collapse {
@@ -66,34 +67,23 @@ header#desktop {
         }
       }
     }
-
-    .navbar-collapse::before {
-      display: block;
-      content: "";
-      position: absolute;
-      z-index: 35;
-      left: -115%;
-      height: 100%;
-      width: 300%;
-      background-size: cover;
-    }
   }
 }
 
 header#mobile {
-  position: fixed;
+  position: relative;
   z-index: 999;
   width: 100%;
-  height: 120px;
+  height: 72px;
   transition: 0.7s;
   top: 0;
-  background: #2f2b2c;
+  background: #364156;
 
   div.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 8px;
+    padding-bottom: 0;
     height: 100%;
     position: relative;
     z-index: 999;
@@ -103,12 +93,9 @@ header#mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    img {
-      height: 65px;
-      width: auto;
-      object-fit: contain;
-    }
+    color: #f0f0f0;
+    font-size: 20px;
+    text-decoration: none;
   }
 
   .sidenav {
@@ -118,7 +105,7 @@ header#mobile {
     z-index: 1;
     top: 0;
     right: 0;
-    background: rgba(#e47b34, 0.9);
+    background: rgba(#11151c, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
     padding-bottom: 50px;
@@ -133,15 +120,15 @@ header#mobile {
       position: absolute;
       top: 10px;
       right: 24px;
-      font-size: 32px;
+      font-size: 24px;
       margin-left: 50px;
-      color: #ffffffcc;
+      color: #f0f0f0;
       text-decoration: none;
       transition: 0.7s;
     }
 
     .closebtn:hover {
-      color: #ffffff;
+      color: #f9f9f9;
       transition: 0.7s;
     }
 
@@ -173,55 +160,14 @@ header#mobile {
           font-size: 1rem;
           font-weight: 500;
           text-decoration: none;
-          text-transform: uppercase;
-          color: #ffffffcc;
+          color: #f0f0f0;
           transition: 0.7s;
         }
 
         a.link:hover {
           background: transparent;
-          color: #ffffff;
+          color: #f9f9f9;
           transition: 0.7s;
-        }
-      }
-    }
-
-    ul.redes_sociais_contato {
-      display: flex;
-      align-items: center;
-      padding: 0;
-      padding: 0px 50px;
-      margin: 0;
-      list-style: none;
-      margin-top: 16px;
-
-      li + li {
-        margin-left: 16px;
-      }
-
-      li {
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0;
-          padding: 0;
-          height: auto;
-          cursor: pointer;
-          font-size: 1rem;
-          font-weight: 500;
-          text-decoration: none;
-          color: #ffffffcc;
-          transition: 0.7s;
-
-          i {
-            font-size: 24px;
-          }
-
-          i.fas.fa-phone-alt {
-            font-size: 16px;
-            margin-right: 8px;
-          }
         }
       }
     }
@@ -235,28 +181,32 @@ header#mobile {
     border-radius: 4px;
     text-decoration: none;
     background: transparent;
-    color: #fff;
+    color: #f0f0f0;
     cursor: pointer;
     transition: 0.7s;
     margin: 0;
     padding: 0;
+
+    i{
+        font-size: 22px;
+    }
   }
 
   a.sidenav-trigger:hover {
     background: transparent;
-    color: #fff;
+    color: #f9f9f9;
     transition: 0.7s;
   }
 }
 
-//   @media screen and (min-width: 992px) {
-//     header#mobile {
-//       display: none;
-//     }
-//   }
+@media screen and (min-width: 992px) {
+  header#mobile {
+    display: none;
+  }
+}
 
-//   @media screen and (max-width: 991px) {
-//     header#desktop {
-//       display: none;
-//     }
-//   }
+@media screen and (max-width: 991px) {
+  header#desktop {
+    display: none;
+  }
+}
