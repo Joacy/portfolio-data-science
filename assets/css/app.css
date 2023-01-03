@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #11151c;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans HK", sans-serif;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+section {
+  padding: 70px 0px;
+}
+
+section:nth-child(odd) {
+  background: #212d40;
+}
+
+section:nth-child(even) {
+  background: #11151c;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 50px 0px;
+  }
+}
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.125rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.475rem;
+  }
+  h2 {
+    font-size: 1.9125rem;
+  }
+  h3 {
+    font-size: 1.35rem;
+  }
+  h4 {
+    font-size: 1.2375rem;
+  }
+  h5 {
+    font-size: 1.08rem;
+  }
+  h6 {
+    font-size: 1.0125rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+header#desktop {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  background: #364156;
+  top: 0;
+  overflow: hidden;
+}
+header#desktop nav {
+  background-color: revert;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #364156;
+  width: 100%;
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-size: cover;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header#desktop nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header#desktop nav a.navbar-brand {
+  color: #f0f0f0;
+}
+header#desktop nav .navbar-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 0;
+  padding-left: 50px;
+  margin-left: 50px;
+  position: relative;
+  background: transparent;
+  z-index: 50;
+}
+header#desktop nav .navbar-collapse ul.opcoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  width: 100%;
+  position: relative;
+  z-index: 50;
+}
+header#desktop nav .navbar-collapse ul.opcoes li.opcao + li.opcao {
+  margin-left: 48px;
+}
+header#desktop nav .navbar-collapse ul.opcoes li.opcao a.nav-link {
+  color: #f0f0f0;
+}
+header#desktop nav .navbar-collapse ul.opcoes li.opcao a.nav-link:hover {
+  color: #f5f5f5;
+}
+header#desktop nav .navbar-collapse::before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 35;
+  left: -115%;
+  height: 100%;
+  width: 300%;
+  background-size: cover;
+}
+
+header#mobile {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 120px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  top: 0;
+  background: #2f2b2c;
+}
+header#mobile div.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 8px;
+  height: 100%;
+  position: relative;
+  z-index: 999;
+}
+header#mobile a.brand-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header#mobile a.brand-logo img {
+  height: 65px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header#mobile .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: rgba(228, 123, 52, 0.9);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+header#mobile .sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  font-size: 32px;
+  margin-left: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header#mobile .sidenav .closebtn:hover {
+  color: #ffffff;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header#mobile .sidenav ul.opcoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  list-style: none;
+  margin: 0;
+}
+header#mobile .sidenav ul.opcoes li + li {
+  margin-top: 16px;
+}
+header#mobile .sidenav ul.opcoes li {
+  padding: 0px 32px;
+  background: transparent;
+}
+header#mobile .sidenav ul.opcoes li a.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header#mobile .sidenav ul.opcoes li a.link:hover {
+  background: transparent;
+  color: #ffffff;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header#mobile .sidenav ul.redes_sociais_contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  padding: 0px 50px;
+  margin: 0;
+  list-style: none;
+  margin-top: 16px;
+}
+header#mobile .sidenav ul.redes_sociais_contato li + li {
+  margin-left: 16px;
+}
+header#mobile .sidenav ul.redes_sociais_contato li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+header#mobile .sidenav ul.redes_sociais_contato li a i {
+  font-size: 24px;
+}
+header#mobile .sidenav ul.redes_sociais_contato li a i.fas.fa-phone-alt {
+  font-size: 16px;
+  margin-right: 8px;
+}
+header#mobile a.sidenav-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  margin: 0;
+  padding: 0;
+}
+header#mobile a.sidenav-trigger:hover {
+  background: transparent;
+  color: #fff;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+#home {
+  height: calc(100vh - 72px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#home .container h1 {
+  margin-top: 32px;
+}
+#home .container h3 {
+  margin-top: 32px;
+}
+#home .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin-top: 32px;
+}
+#home .container ul li + li {
+  margin-left: 32px;
+}
+#home .container ul li a {
+  text-decoration: none;
+}
+#home .container ul li a i {
+  font-size: 24px;
+  color: #f0f0f0;
+}
+#home .container ul li a:hover i {
+  color: #f9f9f9;
+}

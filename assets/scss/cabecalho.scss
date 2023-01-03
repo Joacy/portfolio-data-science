@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #11151c;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans HK", sans-serif;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+section {
+  padding: 70px 0px;
+}
+
+section:nth-child(odd) {
+  background: #212d40;
+}
+
+section:nth-child(even) {
+  background: #11151c;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 50px 0px;
+  }
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.125rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.375rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2.75 * 0.9rem;
+  }
+
+  h2 {
+    font-size: 2.125 * 0.9rem;
+  }
+
+  h3 {
+    font-size: 1.5 * 0.9rem;
+  }
+
+  h4 {
+    font-size: 1.375 * 0.9rem;
+  }
+
+  h5 {
+    font-size: 1.2 * 0.9rem;
+  }
+
+  h6 {
+    font-size: 1.125 * 0.9rem;
+  }
+
+  p {
+    font-size: 1 * 0.9rem;
+  }
+}
