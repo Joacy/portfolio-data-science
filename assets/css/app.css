@@ -422,6 +422,36 @@ header#mobile a.sidenav-trigger:hover {
   color: #f9f9f9;
 }
 
-#sobre p {
+#sobre h2 {
+  margin-bottom: 32px;
+}
+#sobre p + p {
   margin-top: 16px;
+}
+
+#servicos h2 {
+  margin-bottom: 32px;
+}
+#servicos .grid-servicos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 32px 1fr 32px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 32px;
+}
+#servicos .grid-servicos .card {
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  background: transparent;
+}
+#servicos .grid-servicos .card .card-header {
+  border: 0;
+  border-bottom: 1px solid #f0f0f0;
+  background: transparent;
+  padding: 16px;
+  text-align: center;
+}
+#servicos .grid-servicos .card .card-body {
+  border: 0;
+  padding: 16px;
 }

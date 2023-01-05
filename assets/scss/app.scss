@@ -52,8 +52,43 @@
 }
 
 #sobre {
-  p {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  p + p {
     margin-top: 16px;
+  }
+}
+
+#servicos {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  .grid-servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+
+    .card {
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+      background: transparent;
+
+      .card-header {
+        border: 0;
+        border-bottom: 1px solid #f0f0f0;
+        background: transparent;
+        padding: 16px;
+        text-align: center;
+      }
+
+      .card-body {
+        border: 0;
+        padding: 16px;
+      }
+    }
   }
 }
 
