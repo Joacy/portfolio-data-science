@@ -409,6 +409,8 @@ header#mobile a.sidenav-trigger:hover {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
   margin-top: 32px;
 }
 #home .container ul li + li {
@@ -448,6 +450,8 @@ header#mobile a.sidenav-trigger:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
+  padding: 0;
 }
 #sobre div.formacao-academica ul li + li {
   margin-left: 32px;
@@ -589,5 +593,66 @@ header#mobile a.sidenav-trigger:hover {
   #servicos .grid-servicos {
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+footer {
+  padding: 16px 0;
+  background: #364156;
+}
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer p {
+  font-size: 14px;
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li + li {
+  margin-left: 8px;
+}
+footer ul li a {
+  text-decoration: none;
+}
+footer ul li a i {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+footer ul li a:hover i {
+  color: #f9f9f9;
+}
+
+@media screen and (max-width: 991px) {
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer ul {
+    margin: 0;
+    margin-top: 8px;
   }
 }
