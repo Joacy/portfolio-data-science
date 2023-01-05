@@ -48,7 +48,7 @@
 
     <header id="mobile">
         <div class="container">
-            <a href="#home" class="brand-logo link">
+            <a href="#home" class="brand-logo nav-link">
                 Joacy Mesquita
             </a>
 
@@ -56,19 +56,19 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <ul class="opcoes">
                     <li>
-                        <a class="link" href="#sobre"><span>Sobre</span></a>
+                        <a class="nav-link" href="#sobre"><span>Sobre</span></a>
                     </li>
                     <li>
-                        <a class="link" href="#habilidades"><span>Habilidades</span></a>
+                        <a class="nav-link" href="#habilidades"><span>Habilidades</span></a>
                     </li>
                     <li>
-                        <a class="link" href="#projetos"><span>Projetos</span></a>
+                        <a class="nav-link" href="#projetos"><span>Projetos</span></a>
                     </li>
                     <li>
-                        <a class="link" href="#servicos"><span>Serviços</span></a>
+                        <a class="nav-link" href="#servicos"><span>Serviços</span></a>
                     </li>
                     <li>
-                        <a class="link" href="#contato"><span>Contato</span></a>
+                        <a class="nav-link" href="#contato"><span>Contato</span></a>
                     </li>
                 </ul>
             </div>
@@ -109,17 +109,65 @@
             <div class="container">
                 <h2>Sobre mim</h2>
 
-                <p>
+                <div class="descricao">
+                    <h5>Resumo</h5>
 
-                </p>
+                    <p>
+                        Sou Natural de Conceição do Jacuípe, uma cidade localizada no interior da Bahia. Sou uma pessoa
+                        introvertida, observadora, lógica, curiosa. Em 2019, me tornei Bacharel em Engenharia de
+                        Computação
+                        pela Universidade Estadual de Feira de Santana (UEFS), onde tive a oportunidade de conhecer a
+                        metologia de Aprendizagem Baseada em Problemas, o PBL, e também de atuar em projetos de
+                        Iniciação
+                        Científica.
+                    </p>
 
-                <p>
+                    <p>
+                        Atualmente sou estudante de Mestrado no Programa de Pós-Graduação em Ciência da Computação da
+                        Universidade Estadual de Feira de Santana. Tendo pesquisa localizada no contexto de Ciência de
+                        Dados
+                        e Aprendizado de Máquina, aplicando Deep Learning em um problema de classificação de imagens
+                        médicas.
+                    </p>
 
-                </p>
+                    <p>
+                        Possuo experiência com o Desenvolvimento de Sistemas Web, e Aplicativos, utilizando HTML5, CSS3,
+                        JavaScript, React, React Native, Node. Nos últimos 2 anos tenho trabalhado em uma migração de
+                        carreira para a área de Ciência de Dados e Aprendizado de Máquina, adiquirindo experiência com a
+                        linguagem Python, utilizando bibliotecas como pandas, numpy, scikit-learn, e frameworks como
+                        TensorFlow e PyTorch.
+                    </p>
+                </div>
 
-                <p>
+                <div class="formacao-academica">
+                    <h5>Formação Acadêmica</h5>
+                    <ul>
+                        <li>
+                            <h6>Bacharelado em Engenharia de Computação</h6>
+                            <p class="periodo">
+                                de Março de 2013 até Maio de 2019
+                            </p>
+                            <p class="instituicao">
+                                Universidade Estadual de Feira de Santana (UEFS)
+                            </p>
+                            <p class="info">
 
-                </p>
+                            </p>
+                        </li>
+                        <li>
+                            <h6>Mestrado em Ciência da Computação</h6>
+                            <p class="periodo">
+                                de Agosto de 2020 até Atualmente
+                            </p>
+                            <p class="instituicao">
+                                Universidade Estadual de Feira de Santana (UEFS)
+                            </p>
+                            <p class="info">
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -143,7 +191,7 @@
                         <img src="./assets/img/habilidades/scikit-learn.png" alt="Logo da scikit-learn">
                     </li>
                     <li>
-                        <img src="./assets/img/habilidades/Keras.png" alt="Logo do Keras">
+                        <img src="./assets/img/habilidades/keras.png" alt="Logo do Keras">
                     </li>
                     <li>
                         <img src="./assets/img/habilidades/pytorch.png" alt="Logo do Pytorch">
@@ -264,7 +312,7 @@
             }
             $doc.animate(
                 {
-                    scrollTop: $($.attr(this, "href")).offset().top,
+                    scrollTop: $($.attr(this, "href")).offset().top - 72,
                 },
                 time
             );
@@ -272,14 +320,14 @@
         });
     }
     if (width < 992) {
-        $("a.link").click(function () {
+        $("a.nav-link").click(function () {
             var time = $(this).offset().top / 2;
             if (time < 2000) {
                 time = 2000;
             }
             $doc.animate(
                 {
-                    scrollTop: $($.attr(this, "href")).offset().top,
+                    scrollTop: $($.attr(this, "href")).offset().top - 72,
                 },
                 time
             );

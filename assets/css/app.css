@@ -56,19 +56,19 @@ h1 {
 }
 
 h2 {
-  font-size: 2.125rem;
+  font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h4 {
-  font-size: 1.375rem;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 h6 {
@@ -84,16 +84,16 @@ p {
     font-size: 2.475rem;
   }
   h2 {
-    font-size: 1.9125rem;
+    font-size: 2.025rem;
   }
   h3 {
-    font-size: 1.35rem;
+    font-size: 1.575rem;
   }
   h4 {
-    font-size: 1.2375rem;
+    font-size: 1.35rem;
   }
   h5 {
-    font-size: 1.08rem;
+    font-size: 1.125rem;
   }
   h6 {
     font-size: 1.0125rem;
@@ -104,7 +104,8 @@ p {
 }
 header#desktop {
   width: 100%;
-  position: relative;
+  height: 72px;
+  position: fixed;
   z-index: 999;
   background: #364156;
   top: 0;
@@ -192,7 +193,7 @@ header#desktop nav .navbar-collapse ul.opcoes li.opcao a.nav-link:hover {
 }
 
 header#mobile {
-  position: relative;
+  position: fixed;
   z-index: 999;
   width: 100%;
   height: 72px;
@@ -304,7 +305,7 @@ header#mobile .sidenav ul.opcoes li {
   padding: 0px 32px;
   background: transparent;
 }
-header#mobile .sidenav ul.opcoes li a.link {
+header#mobile .sidenav ul.opcoes li a.nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +320,7 @@ header#mobile .sidenav ul.opcoes li a.link {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
-header#mobile .sidenav ul.opcoes li a.link:hover {
+header#mobile .sidenav ul.opcoes li a.nav-link:hover {
   background: transparent;
   color: #f9f9f9;
   -webkit-transition: 0.7s;
@@ -367,13 +368,15 @@ header#mobile a.sidenav-trigger:hover {
   }
 }
 #home {
-  height: calc(100vh - 72px);
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 72px;
+  padding-bottom: 0;
 }
 #home .container {
   display: -webkit-box;
@@ -425,8 +428,67 @@ header#mobile a.sidenav-trigger:hover {
 #sobre h2 {
   margin-bottom: 32px;
 }
-#sobre p + p {
+#sobre div.descricao {
+  margin-bottom: 32px;
+}
+#sobre div.descricao h5 {
+  margin-bottom: 16px;
+}
+#sobre div.descricao p + p {
   margin-top: 16px;
+}
+#sobre div.formacao-academica h5 {
+  margin-bottom: 16px;
+}
+#sobre div.formacao-academica ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#sobre div.formacao-academica ul li + li {
+  margin-left: 32px;
+}
+#sobre div.formacao-academica ul li {
+  background: #f0f0f0;
+  padding: 16px 32px;
+  width: 50%;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#sobre div.formacao-academica ul li h6 {
+  color: #212d40;
+  margin-bottom: 8px;
+  text-align: center;
+}
+#sobre div.formacao-academica ul li p.periodo {
+  color: #212d40;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-align: center;
+}
+#sobre div.formacao-academica ul li p.instituicao {
+  color: #212d40;
+  text-align: center;
+}
+#sobre div.formacao-academica ul li p.info {
+  display: none;
 }
 
 #habilidades h2 {
@@ -496,6 +558,20 @@ header#mobile a.sidenav-trigger:hover {
 }
 
 @media screen and (max-width: 991px) {
+  #sobre div.formacao-academica ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #sobre div.formacao-academica ul li + li {
+    margin: 0;
+    margin-top: 32px;
+  }
+  #sobre div.formacao-academica ul li {
+    height: 175px;
+    width: 100%;
+  }
   #habilidades ul {
     -ms-grid-columns: 1fr 32px 1fr;
     grid-template-columns: repeat(2, 1fr);
