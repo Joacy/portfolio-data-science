@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joacy Mesquita">
     <meta name="description" content="Portfólio de projetos de Joacy Mesquita, nas áreas de Ciência e Análise de Dados">
-    <meta name="keywords" content="Ciência de Dados, Análise de Dados, Visualização de Dados, Machine Learning, Deep Learning">
+    <meta name="keywords"
+        content="Ciência de Dados, Análise de Dados, Visualização de Dados, Machine Learning, Deep Learning">
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:url" content="https://www.joacymesquita.vercel.app">
     <meta property="og:title" content="Portfólio - Joacy Mesquita - Cientista de Dados / Analista de Dados" />
-    <meta property="og:description" content="Portfólio de projetos de Joacy Mesquita, nas áreas de Ciência e Análise de Dados" />
+    <meta property="og:description"
+        content="Portfólio de projetos de Joacy Mesquita, nas áreas de Ciência e Análise de Dados" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://joacymesquita.vercel.app/assets/img/sobre/Joacy-Mesquita.webp" />
     <meta property="og:site_name" content="Joacy Mesquita - Cientista de Dados / Analista de Dados" />
@@ -20,8 +22,15 @@
 
     <title>Portfólio - Joacy Mesquita - Cientista de Dados / Analista de Dados</title>
 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css" />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" />
+
     <link rel="stylesheet" href="assets/css/app.css" />
 </head>
 
@@ -187,32 +196,50 @@
         <section id="habilidades" class="habilidades">
             <div class="container">
                 <h2>Habilidades adquiridas</h2>
-                <ul>
-                    <li>
-                        <img src="./assets/img/habilidades/python.webp" alt="Logo do Python">
-                    </li>
-                    <li>
-                        <img src="./assets/img/habilidades/pandas.webp" alt="Logo do Pandas">
-                    </li>
-                    <li>
-                        <img src="./assets/img/habilidades/numpy.webp" alt="Logo do Numpy">
-                    </li>
-                    <li>
-                        <img src="./assets/img/habilidades/matplotlib.webp" alt="Logo da matplotlib">
-                    </li>
-                    <li>
-                        <img src="./assets/img/habilidades/scikit-learn.webp" alt="Logo da scikit-learn">
-                    </li>
-                    <li>
-                        <img src="./assets/img/habilidades/keras.webp" alt="Logo do Keras">
-                    </li>
-                    <li>
-                        <img src="./assets/img/habilidades/pytorch.webp" alt="Logo do Pytorch">
-                    </li>
-                    <li>
-                        <img src="./assets/img/habilidades/streamlit.webp" alt="Logo do Streamlit">
-                    </li>
-                </ul>
+
+
+                <div id="slide-habilidades" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="box">
+                            <img src="./assets/img/habilidades/python.webp" alt="Logo do Python">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <img src="./assets/img/habilidades/pandas.webp" alt="Logo do Pandas">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <img src="./assets/img/habilidades/numpy.webp" alt="Logo do Numpy">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <img src="./assets/img/habilidades/matplotlib.webp" alt="Logo da matplotlib">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <img src="./assets/img/habilidades/scikit-learn.webp" alt="Logo da scikit-learn">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <img src="./assets/img/habilidades/keras.webp" alt="Logo do Keras">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <img src="./assets/img/habilidades/pytorch.webp" alt="Logo do Pytorch">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <img src="./assets/img/habilidades/streamlit.webp" alt="Logo do Streamlit">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -220,7 +247,32 @@
             <div class="container">
                 <h2>Projetos que realizei</h2>
 
+                <div class="grid-projetos">
+                    <a href="./assets/projetos/Estatística_e_Vacinacao.html" class="card projeto">
+                        <div class="card-header">
+                            <h6>Vacinação Covid-19</h6>
+                        </div>
+                        <div class="card-body">
 
+                        </div>
+                    </a>
+                    <a href="./assets/projetos/Assiduidade_Vereadores.html" class="card projeto">
+                        <div class="card-header">
+                            <h6>Assiduidade dos Vereadores</h6>
+                        </div>
+                        <div class="card-body">
+
+                        </div>
+                    </a>
+                    <a href="./assets/projetos/Mapa_Violencia.html" class="card projeto">
+                        <div class="card-header">
+                            <h6>Mapa da Violência</h6>
+                        </div>
+                        <div class="card-body">
+
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -335,7 +387,6 @@
     }
 </script>
 
-
 <script type="text/javascript">
     var $doc = $("html, body");
     var width = $(window).width();
@@ -370,6 +421,52 @@
             return false;
         });
     }
+</script>
+
+<script src="assets/owlcarousel/owl.carousel.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var owl = $("#slide-habilidades");
+
+        owl.owlCarousel({
+            loop: true,
+            margin: 32,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1500,
+            navSpeed: 500,
+            dotsSpeed: 500,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                    nav: true,
+                    navText: [
+                        "<div class='nav-btn prev-slide'></div>",
+                        "<div class='nav-btn next-slide'></div>",
+                    ],
+                },
+                767: {
+                    items: 3,
+                    nav: true,
+                    navText: [
+                        "<div class='nav-btn prev-slide'></div>",
+                        "<div class='nav-btn next-slide'></div>",
+                    ],
+                },
+                1199: {
+                    items: 4,
+                    nav: true,
+                    navText: [
+                        "<div class='nav-btn prev-slide'></div>",
+                        "<div class='nav-btn next-slide'></div>",
+                    ],
+                },
+            },
+        });
+    });
 </script>
 
 </html>

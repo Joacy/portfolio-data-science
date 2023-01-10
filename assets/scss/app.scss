@@ -136,17 +136,13 @@
   h2 {
     margin-bottom: 32px;
   }
+}
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#slide-habilidades {
+  .owl-item {
+    height: 100px;
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 32px;
-
-    li {
+    div.box {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -157,10 +153,105 @@
       border-radius: 8px;
       background: #f0f0f0;
 
+      box-sizing: border-box;
+
       img {
-        height: 100%;
         width: 100%;
+        height: 100%;
         object-fit: contain;
+      }
+    }
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots {
+    margin-top: 16px;
+
+    button.owl-dot {
+      outline: none;
+
+      span {
+        border: none;
+        border-radius: 10px;
+        width: 36px;
+        height: 3px;
+        margin: 0;
+        background: #364156;
+      }
+    }
+
+    button.owl-dot + button.owl-dot {
+      margin-left: 8px;
+    }
+
+    button.owl-dot.active {
+      border: 2px solid #f0f0f0;
+      border: none;
+
+      span {
+        border: none;
+        width: 36px;
+        height: 3px;
+        background: #f0f0f0;
+      }
+    }
+  }
+}
+
+#projetos {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  .grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+    box-sizing: border-box;
+
+    a.card.projeto {
+      text-decoration: none;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      background: #f0f0f0;
+      transition: 0.5s;
+
+      .card-header {
+        border: 0;
+        border-bottom: 1px solid #212d40;
+        background: transparent;
+        padding: 16px;
+        transition: 0.5s;
+
+        h6 {
+          text-align: center;
+          color: #212d40;
+          transition: 0.5s;
+        }
+      }
+
+      .card-body {
+        border: 0;
+        padding: 16px;
+      }
+    }
+
+    a.card.projeto:hover {
+      background: #212d40;
+      border: 1px solid #f0f0f0;
+      transition: 0.5s;
+
+      .card-header {
+        border-bottom: 1px solid #f0f0f0;
+        transition: 0.5s;
+
+        h6 {
+          color: #f0f0f0;
+          transition: 0.5s;
+        }
       }
     }
   }
@@ -177,25 +268,44 @@
     grid-gap: 32px;
 
     .card {
-      border: 0;
+      border: 1px solid transparent;
       border-radius: 8px;
       background: #f0f0f0;
+      transition: 0.5s;
 
       .card-header {
         border: 0;
         border-bottom: 1px solid #212d40;
         background: transparent;
         padding: 16px;
+        transition: 0.5s;
 
         h6 {
           text-align: center;
           color: #212d40;
+          transition: 0.5s;
         }
       }
 
       .card-body {
         border: 0;
         padding: 16px;
+      }
+    }
+
+    .card:hover {
+      background: #212d40;
+      border: 1px solid #f0f0f0;
+      transition: 0.5s;
+
+      .card-header {
+        border-bottom: 1px solid #f0f0f0;
+        transition: 0.5s;
+
+        h6 {
+          color: #f0f0f0;
+          transition: 0.5s;
+        }
       }
     }
   }
