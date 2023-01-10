@@ -63,24 +63,24 @@
 
 #sobre {
   h2 {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 
   div.descricao {
     h5 {
-      margin-bottom: 16px;
+      margin-bottom: 32px;
     }
 
     p + p {
       margin-top: 16px;
     }
 
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 
   div.formacao-academica {
     h5 {
-      margin-bottom: 16px;
+      margin-bottom: 32px;
     }
 
     ul {
@@ -134,7 +134,7 @@
 
 #habilidades {
   h2 {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 }
 
@@ -203,7 +203,7 @@
 
 #projetos {
   h2 {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 
   .grid-projetos {
@@ -259,7 +259,7 @@
 
 #servicos {
   h2 {
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 
   .grid-servicos {
@@ -336,6 +336,12 @@
     }
   }
 
+  #projetos {
+    .grid-projetos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   #servicos {
     .grid-servicos {
       grid-template-columns: repeat(2, 1fr);
@@ -346,6 +352,12 @@
 @media screen and (max-width: 767px) {
   #habilidades {
     ul {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  #projetos {
+    .grid-projetos {
       grid-template-columns: repeat(1, 1fr);
     }
   }

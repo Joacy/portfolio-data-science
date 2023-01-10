@@ -439,19 +439,19 @@ header#mobile a.sidenav-trigger:hover {
 }
 
 #sobre h2 {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 #sobre div.descricao {
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
 #sobre div.descricao h5 {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 #sobre div.descricao p + p {
   margin-top: 16px;
 }
 #sobre div.formacao-academica h5 {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 #sobre div.formacao-academica ul {
   list-style: none;
@@ -507,7 +507,7 @@ header#mobile a.sidenav-trigger:hover {
 }
 
 #habilidades h2 {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 
 #slide-habilidades .owl-item {
@@ -569,7 +569,7 @@ header#mobile a.sidenav-trigger:hover {
 }
 
 #projetos h2 {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 #projetos .grid-projetos {
   display: -ms-grid;
@@ -624,7 +624,7 @@ header#mobile a.sidenav-trigger:hover {
 }
 
 #servicos h2 {
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 #servicos .grid-servicos {
   display: -ms-grid;
@@ -694,6 +694,10 @@ header#mobile a.sidenav-trigger:hover {
     -ms-grid-columns: (1fr) [2];
     grid-template-columns: repeat(2, 1fr);
   }
+  #projetos .grid-projetos {
+    -ms-grid-columns: 1fr 32px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
   #servicos .grid-servicos {
     -ms-grid-columns: 1fr 32px 1fr;
     grid-template-columns: repeat(2, 1fr);
@@ -702,6 +706,10 @@ header#mobile a.sidenav-trigger:hover {
 @media screen and (max-width: 767px) {
   #habilidades ul {
     -ms-grid-columns: (1fr) [1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #projetos .grid-projetos {
+    -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
   }
   #servicos .grid-servicos {
