@@ -367,6 +367,10 @@ header#mobile a.sidenav-trigger:hover {
     display: none;
   }
 }
+h2 {
+  margin-bottom: 36px;
+}
+
 #home {
   height: 100vh;
   display: -webkit-box;
@@ -433,25 +437,26 @@ header#mobile a.sidenav-trigger:hover {
 #home .container ul li a i {
   font-size: 32px;
   color: #f0f0f0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 #home .container ul li a:hover i {
   color: #f9f9f9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-#sobre h2 {
-  margin-bottom: 48px;
-}
 #sobre div.descricao {
   margin-bottom: 36px;
 }
 #sobre div.descricao h5 {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 #sobre div.descricao p + p {
   margin-top: 16px;
 }
 #sobre div.formacao-academica h5 {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 #sobre div.formacao-academica ul {
   list-style: none;
@@ -504,10 +509,6 @@ header#mobile a.sidenav-trigger:hover {
 }
 #sobre div.formacao-academica ul li p.info {
   display: none;
-}
-
-#habilidades h2 {
-  margin-bottom: 48px;
 }
 
 #slide-habilidades .owl-item {
@@ -568,9 +569,6 @@ header#mobile a.sidenav-trigger:hover {
   background: #f0f0f0;
 }
 
-#projetos h2 {
-  margin-bottom: 48px;
-}
 #projetos .grid-projetos {
   display: -ms-grid;
   display: grid;
@@ -623,9 +621,6 @@ header#mobile a.sidenav-trigger:hover {
   transition: 0.5s;
 }
 
-#servicos h2 {
-  margin-bottom: 48px;
-}
 #servicos .grid-servicos {
   display: -ms-grid;
   display: grid;
@@ -675,6 +670,81 @@ header#mobile a.sidenav-trigger:hover {
   transition: 0.5s;
 }
 
+#contato h2 {
+  text-align: center;
+}
+#contato ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+#contato ul li + li {
+  margin-top: 24px;
+}
+#contato ul li {
+  width: 50%;
+}
+#contato ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  border: 1px solid transparent;
+  width: 100%;
+  height: 42px;
+  padding: 8px 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#contato ul li a i {
+  font-size: 24px;
+  margin-right: 8px;
+  color: #364156;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#contato ul li a p {
+  color: #364156;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#contato ul li a:hover {
+  background: #212d40;
+  border: 1px solid #f0f0f0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#contato ul li a:hover i {
+  color: #f0f0f0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#contato ul li a:hover p {
+  color: #f0f0f0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media screen and (max-width: 991px) {
   #sobre div.formacao-academica ul {
     -webkit-box-orient: vertical;
@@ -701,6 +771,9 @@ header#mobile a.sidenav-trigger:hover {
   #servicos .grid-servicos {
     -ms-grid-columns: 1fr 32px 1fr;
     grid-template-columns: repeat(2, 1fr);
+  }
+  #contato ul li {
+    width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -762,13 +835,24 @@ footer ul li a {
   width: 48px;
   height: 48px;
   text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 footer ul li a i {
   font-size: 24px;
   color: #f0f0f0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+footer ul li a:hover {
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 footer ul li a:hover i {
   color: #f9f9f9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 991px) {
