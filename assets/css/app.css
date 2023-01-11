@@ -689,6 +689,7 @@ h2 {
   align-items: center;
   list-style: none;
   width: 100%;
+  margin: 0;
 }
 #contato ul li + li {
   margin-top: 24px;
