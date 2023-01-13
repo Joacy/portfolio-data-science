@@ -604,6 +604,9 @@ h2 {
   border: 0;
   padding: 16px;
 }
+#projetos .grid-projetos a.card.projeto .card-footer {
+  display: none;
+}
 #projetos .grid-projetos a.card.projeto:hover {
   background: #212d40;
   border: 1px solid #f0f0f0;
